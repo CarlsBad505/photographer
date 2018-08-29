@@ -1,3 +1,6 @@
+$primary-red: #ee4b28;
+$primary-blue: rgba(77,163,255,0.98);
+
 body,
 html {
   width: 100%;
@@ -301,13 +304,13 @@ header.masthead p {
 }
 
 .btn-primary {
-  background-color: #F05F40;
-  border-color: #F05F40;
+  background-color: $primary-blue !important;
+  border-color: transparent !important;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   color: #fff;
-  background-color: #ee4b28 !important;
+  background-color: $primary-red !important;
   border-color: transparent !important;
 }
 
@@ -317,4 +320,9 @@ header.masthead p {
 
 .learn-more {
   box-shadow: 5px 5px 10px black
+}
+
+.my-4 {
+  border-color: $primary-red;
+  border-width: medium;
 }
