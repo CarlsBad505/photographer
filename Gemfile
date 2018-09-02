@@ -18,6 +18,7 @@ gem 'bootstrap', '~> 4.1.1'
 gem 'sprockets-rails'
 gem 'jquery-rails'
 gem 'jquery-easing-rails'
+gem 'font-awesome-rails'
 
 
 group :development, :test do

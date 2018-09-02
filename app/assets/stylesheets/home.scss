@@ -183,6 +183,18 @@ header.masthead {
   background-size: cover;
 }
 
+header.experiential {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
+  // background-image: url("/assets/cover.jpg");
+  background-image: url("https://s3.us-east-2.amazonaws.com/aj-canaria/experiential-cover.jpg");
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 header.masthead hr {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -208,6 +220,10 @@ header.masthead p {
     min-height: 650px;
     padding-top: 0;
     padding-bottom: 0;
+  }
+  header.portfolio-masthead {
+    height: 50vh;
+    min-height: 300px;
   }
   header.masthead h1 {
     font-size: 3rem;

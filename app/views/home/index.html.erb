@@ -41,9 +41,9 @@
 
 <section class="p-0" id="portfolio">
   <div class="container-fluid p-0">
-    <div class="row no-gutters popup-gallery">
+    <div class="row no-gutters">
       <div class="col-lg-6 col-sm-6">
-        <a class="portfolio-box" href="images/portfolio/fullsize/1.jpg">
+        <%= link_to portfolio_experiential_path, class: "portfolio-box" do %>
           <%= image_tag('/portfolio/thumbnails/1.jpg', class: 'img-fluid') %>
           <div class="portfolio-box-caption">
             <div class="portfolio-box-caption-content">
@@ -51,14 +51,14 @@
                 Category
               </div>
               <div class="project-name">
-                Project Name
+                Experiential
               </div>
             </div>
           </div>
-        </a>
+        <% end %>
       </div>
       <div class="col-lg-6 col-sm-6">
-        <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
+        <%= link_to portfolio_architecture_path, class: "portfolio-box" do %>
           <%= image_tag('/portfolio/thumbnails/2.jpg', class: 'img-fluid') %>
           <div class="portfolio-box-caption">
             <div class="portfolio-box-caption-content">
@@ -66,14 +66,14 @@
                 Category
               </div>
               <div class="project-name">
-                Project Name
+                Architecture
               </div>
             </div>
           </div>
-        </a>
+        <% end %>
       </div>
       <div class="col-lg-6 col-sm-6">
-        <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
+        <%= link_to portfolio_aerial_path, class: "portfolio-box" do %>
           <%= image_tag('/portfolio/thumbnails/3.jpg', class: 'img-fluid') %>
           <div class="portfolio-box-caption">
             <div class="portfolio-box-caption-content">
@@ -81,14 +81,14 @@
                 Category
               </div>
               <div class="project-name">
-                Project Name
+                Aerial
               </div>
             </div>
           </div>
-        </a>
+        <% end %>
       </div>
       <div class="col-lg-6 col-sm-6">
-        <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
+        <%= link_to portfolio_adventure_path, class: "portfolio-box" do %>
           <%= image_tag('/portfolio/thumbnails/4.jpg', class: 'img-fluid') %>
           <div class="portfolio-box-caption">
             <div class="portfolio-box-caption-content">
@@ -96,11 +96,11 @@
                 Category
               </div>
               <div class="project-name">
-                Project Name
+                Adventure
               </div>
             </div>
           </div>
-        </a>
+        <% end %>
       </div>
     </div>
   </div>
@@ -119,28 +119,28 @@
     <div class="row">
       <div class="col-lg-3 col-md-6 text-center">
         <div class="service-box mt-5 mx-auto">
-          <i class="fa fa-4x fa-diamond text-primary mb-3 sr-icons"></i>
+          <i class="fa fa-4x fa-heart text-primary mb-3 sr-icons"></i>
           <h3 class="mb-3">Emotion</h3>
-          <p class="text-muted mb-0">Garnishing raw emotion to invoke your sensory behind each shot.</p>
+          <p class="text-muted mb-0">Garnishing raw emotion to invoke vivid sensory behind each shot.</p>
         </div>
       </div>
       <div class="col-lg-3 col-md-6 text-center">
         <div class="service-box mt-5 mx-auto">
-          <i class="fa fa-4x fa-paper-plane text-primary mb-3 sr-icons"></i>
+          <i class="fa fa-4x fa-picture-o text-primary mb-3 sr-icons"></i>
           <h3 class="mb-3">Attention To Detail</h3>
           <p class="text-muted mb-0">The expertise to know what lense, what effect, and what angle to use for each scenario.</p>
         </div>
       </div>
       <div class="col-lg-3 col-md-6 text-center">
         <div class="service-box mt-5 mx-auto">
-          <i class="fa fa-4x fa-newspaper-o text-primary mb-3 sr-icons"></i>
+          <i class="fa fa-4x fa-calendar text-primary mb-3 sr-icons"></i>
           <h3 class="mb-3">Time</h3>
           <p class="text-muted mb-0">Keeping to a schedule without jeopardizing quality.</p>
         </div>
       </div>
       <div class="col-lg-3 col-md-6 text-center">
         <div class="service-box mt-5 mx-auto">
-          <i class="fa fa-4x fa-heart text-primary mb-3 sr-icons"></i>
+          <i class="fa fa-4x fa-magic text-primary mb-3 sr-icons"></i>
           <h3 class="mb-3">Imagination</h3>
           <p class="text-muted mb-0">Turning ideas and imaginative cognition into real content.</p>
         </div>
