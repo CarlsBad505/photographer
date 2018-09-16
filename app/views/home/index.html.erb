@@ -6,11 +6,14 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Portfolio</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Experiential</a>
+            <a class="dropdown-item" href="#">Architecture</a>
+            <a class="dropdown-item" href="#">Aerial</a>
+            <a class="dropdown-item" href="#">Adventure</a>
+          </div>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#about">About</a>
@@ -32,157 +35,91 @@
         </h1>
         <hr>
       </div>
-      <div class="col-lg-8 mx-auto">
-        <a class="btn btn-primary btn-xl js-scroll-trigger learn-more" href="#portfolio">View Portfolio</a>
-      </div>
     </div>
   </div>
 </header>
 
-<section class="p-0" id="portfolio">
-  <div class="container-fluid p-0">
-    <div class="row no-gutters">
-      <div class="col-lg-6 col-sm-6">
-        <%= link_to portfolio_experiential_path, class: "portfolio-box" do %>
-          <%= image_tag('/portfolio/thumbnails/1.jpg', class: 'img-fluid') %>
-          <div class="portfolio-box-caption">
-            <div class="portfolio-box-caption-content">
-              <div class="project-category text-faded">
-                Category
-              </div>
-              <div class="project-name">
-                Experiential
-              </div>
-            </div>
-          </div>
-        <% end %>
-      </div>
-      <div class="col-lg-6 col-sm-6">
-        <%= link_to portfolio_architecture_path, class: "portfolio-box" do %>
-          <%= image_tag('/portfolio/thumbnails/2.jpg', class: 'img-fluid') %>
-          <div class="portfolio-box-caption">
-            <div class="portfolio-box-caption-content">
-              <div class="project-category text-faded">
-                Category
-              </div>
-              <div class="project-name">
-                Architecture
-              </div>
-            </div>
-          </div>
-        <% end %>
-      </div>
-      <div class="col-lg-6 col-sm-6">
-        <%= link_to portfolio_aerial_path, class: "portfolio-box" do %>
-          <%= image_tag('/portfolio/thumbnails/3.jpg', class: 'img-fluid') %>
-          <div class="portfolio-box-caption">
-            <div class="portfolio-box-caption-content">
-              <div class="project-category text-faded">
-                Category
-              </div>
-              <div class="project-name">
-                Aerial
-              </div>
-            </div>
-          </div>
-        <% end %>
-      </div>
-      <div class="col-lg-6 col-sm-6">
-        <%= link_to portfolio_adventure_path, class: "portfolio-box" do %>
-          <%= image_tag('/portfolio/thumbnails/4.jpg', class: 'img-fluid') %>
-          <div class="portfolio-box-caption">
-            <div class="portfolio-box-caption-content">
-              <div class="project-category text-faded">
-                Category
-              </div>
-              <div class="project-name">
-                Adventure
-              </div>
-            </div>
-          </div>
-        <% end %>
-      </div>
+<div class="parallax1">
+  <div class="parallax-title"><%= link_to 'EXPERIENTIAL', portfolio_experiential_path, class: "parallax-link" %></div>
+</div>
+
+<section class="parallax-box1">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h1 class="section-heading">Capturing The Experience</h1>
+      <hr class="my-4">
+      <p>Lorem ipsum dolor sit amet, tota aeque at est. Epicuri expetendis cu ius, sed et agam deleniti, cum ad ferri volumus disputando. Ne primis labitur comprehensam eam, ius iusto mentitum in. His ad nonumy urbanitas. Eu vix splendide temporibus scribentur.</p>
+      <%= link_to 'View More', portfolio_experiential_path, class: "btn btn-primary btn-xl js-scroll-trigger learn-more" %>
     </div>
   </div>
 </section>
 
-<section id="services">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading">At Your Service</h2>
-        <hr class="my-4">
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-3 col-md-6 text-center">
-        <div class="service-box mt-5 mx-auto">
-          <i class="fa fa-4x fa-heart text-primary mb-3 sr-icons"></i>
-          <h3 class="mb-3">Emotion</h3>
-          <p class="text-muted mb-0">Garnishing raw emotion to invoke vivid sensory behind each shot.</p>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 text-center">
-        <div class="service-box mt-5 mx-auto">
-          <i class="fa fa-4x fa-picture-o text-primary mb-3 sr-icons"></i>
-          <h3 class="mb-3">Attention To Detail</h3>
-          <p class="text-muted mb-0">The expertise to know what lense, what effect, and what angle to use for each scenario.</p>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 text-center">
-        <div class="service-box mt-5 mx-auto">
-          <i class="fa fa-4x fa-calendar text-primary mb-3 sr-icons"></i>
-          <h3 class="mb-3">Time</h3>
-          <p class="text-muted mb-0">Keeping to a schedule without jeopardizing quality.</p>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 text-center">
-        <div class="service-box mt-5 mx-auto">
-          <i class="fa fa-4x fa-magic text-primary mb-3 sr-icons"></i>
-          <h3 class="mb-3">Imagination</h3>
-          <p class="text-muted mb-0">Turning ideas and imaginative cognition into real content.</p>
-        </div>
-      </div>
+<div class="parallax2">
+  <div class="parallax-title"><%= link_to 'ARCHITECTURE', portfolio_architecture_path, class: "parallax-link" %></div>
+</div>
+
+<section class="parallax-box2">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h1 class="section-heading">The World's Legos</h1>
+      <hr class="my-4">
+      <p>Lorem ipsum dolor sit amet, tota aeque at est. Epicuri expetendis cu ius, sed et agam deleniti, cum ad ferri volumus disputando. Ne primis labitur comprehensam eam, ius iusto mentitum in. His ad nonumy urbanitas. Eu vix splendide temporibus scribentur.</p>
+      <%= link_to 'View More', portfolio_architecture_path, class: "btn btn-primary btn-xl js-scroll-trigger learn-more" %>
     </div>
   </div>
 </section>
 
-<section class="bg-primary" id="about">
+<div class="parallax3">
+  <div class="parallax-title"><%= link_to 'AERIAL', portfolio_aerial_path, class: "parallax-link" %></div>
+</div>
+
+<section class="parallax-box3">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h1 class="section-heading">A View From Above</h1>
+      <hr class="my-4">
+      <p>Lorem ipsum dolor sit amet, tota aeque at est. Epicuri expetendis cu ius, sed et agam deleniti, cum ad ferri volumus disputando. Ne primis labitur comprehensam eam, ius iusto mentitum in. His ad nonumy urbanitas. Eu vix splendide temporibus scribentur.</p>
+      <%= link_to 'View More', portfolio_aerial_path, class: "btn btn-primary btn-xl js-scroll-trigger learn-more" %>
+    </div>
+  </div>
+</section>
+
+<div class="parallax4">
+  <div class="parallax-title"><%= link_to 'ADVENTURE', portfolio_adventure_path, class: "parallax-link" %></div>
+</div>
+
+<section class="parallax-box4">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h1 class="section-heading">Oh The Places You'll Go</h1>
+      <hr class="my-4">
+      <p>Lorem ipsum dolor sit amet, tota aeque at est. Epicuri expetendis cu ius, sed et agam deleniti, cum ad ferri volumus disputando. Ne primis labitur comprehensam eam, ius iusto mentitum in. His ad nonumy urbanitas. Eu vix splendide temporibus scribentur.</p>
+      <%= link_to 'View More', portfolio_adventure_path, class: "btn btn-primary btn-xl js-scroll-trigger learn-more" %>
+    </div>
+  </div>
+</section>
+
+<section id="about">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 mx-auto text-center">
-        <h2 class="section-heading text-white">Expertise You Can Trust!</h2>
-        <hr class="light my-4">
-        <p class="text-faded mb-4">Lorem ipsum dolor sit amet, tota aeque at est. Epicuri expetendis cu ius, sed et agam deleniti, cum ad ferri volumus disputando. Ne primis labitur comprehensam eam, ius iusto mentitum in. His ad nonumy urbanitas. Eu vix splendide temporibus scribentur.</p>
-        <a class="btn btn-light btn-xl js-scroll-trigger" href="#contact">Let's Talk</a>
+      <div class="col-md-6">
+        <%= image_tag "https://s3.us-east-2.amazonaws.com/aj-canaria/about-profile.jpg", width: '100%' %>
+      </div>
+      <div class="col-md-6">
+        <h2>Meet AJ Canaria</h2>
+        <hr class="my-5">
+        <p>I was born in New York, Raised in Los Angeles, and studied in San Francisco. Living in Los Angeles, I came to embrace the narrative aspects of photography and took that knowledge to document life in San Francisco.
+          Since I've lived in Austin, Seattle, and currently reside in Denver as PlanOmatic's Chief Photographer.
+          My photographs aim to highlight the emotions of the event experience, capture peak performances in action, and overall chronicle the story to convey a powerful story.
+        </p>
+        <%= link_to(image_tag("facebook.png", width: '50px'), 'http://google.com', class: 'inline-block social', target: '_blank') %>
+        <%= image_tag "instagram.png", width: '50px', class: 'inline-block social' %>
+        <%= image_tag "linkedin.png", width: '50px', class: 'inline-block social' %>
       </div>
     </div>
   </div>
 </section>
 
 <section id="contact">
-  <!-- <div class="container">
-    <div class="row">
-      <div class="col-lg-8 mx-auto text-center">
-        <h2 class="section-heading">Let's Get In Touch!</h2>
-        <hr class="my-4">
-        <p class="mb-5">Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-4 ml-auto text-center">
-        <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
-        <p>123-456-6789</p>
-      </div>
-      <div class="col-lg-4 mr-auto text-center">
-        <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
-        <p>
-          <a href="mailto:your-email@your-domain.com">aj@photography.com</a>
-        </p>
-      </div>
-    </div>
-  </div> -->
   <%= render 'contact' %>
 </section>
